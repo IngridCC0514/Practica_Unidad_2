@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com
+    /bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <title>Ley de Ohm</title>
+</head>
+<body>
+    <div class="rounded container border border-primary">
+        <h2>Calcular Resistencia:</h2>
+        <form action="" id="resistencia">
+            <label for="corriente">Valor de la corriente</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="corriente"
+            required
+            /><br /><br />
+            <label for="voltaje">Valor del voltaje</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="voltaje"
+            required
+            /><br />
+            <label for="resultado" id="IblResultado"></label>
+            <br />
+            <input
+            type="button"
+            value="Calcular"
+            class="btn-warning"
+            onclick="calcularResistencia()"
+            />
+        </form>
+        <br />
+    </div>
+    <br />
+
+    <div class="rounded container border border-danger">
+        <h2>Calcular Corriente:</h2>
+        <form action="" id="current">
+            <label for="voltajeCurr">Valor del voltaje</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="voltajeCurr"
+            required
+            /><br /><br />
+            <label for="resistenciaCurr">Valor de la resistencia</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="resistenciaCurr"
+            required
+            /><br />
+            <label for="resultado" id="IblCurrResultado"></label>
+            <br />
+            <input
+            type="button"
+            value="Calcular"
+            class="btn-danger"
+            onclick="calcularCorriente()"
+            />
+        </form>
+        <br />
+    </div>
+    <br />
+
+    <div class="rounded container border border-primary">
+        <h2>Calcular Voltaje (Diferencia de potencial):</h2>
+        <form action="" id="voltaje">
+            <label for="corrienteVolt">Valor de la corriente</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="corrienteVolt"
+            required
+            /><br /><br />
+            <label for="resistenciaVolt">Valor de la resistencia</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="resistenciaVolt"
+            required
+            /><br />
+            <label for="resultado" id="IblVoltResultado"></label>
+            <br />
+            <input
+            type="button"
+            value="Calcular"
+            class="btn-info"
+            onclick="calcularVoltaje()"
+            />
+        </form>
+        <br />
+    </div>
+    <br />
+    <script src="../script/Ohm.js"></script>
+</body>
+</html>
