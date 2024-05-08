@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 3</title>
+</head>
+<body>
+    <h2>Práctica 3</h2>
+    <p id="demo">Modificado desde JS</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">
+        Cambiar tamaño del Parrafo
+    </button>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">
+        Ocultar Párrafo
+    </button>
+    <h3 id="demo1">Resultado</h3>
+    <script>
+        let x= 6.69;
+        let y= 40.174;
+        let suma= x+y;
+    </script>
+    <button type="button" onclick="document.getElementById('demo1').innerHTML=suma">
+        Resultado de Suma
+    </button>
+    <button type="button" onclick="document.getElementById('demo1').style.display='none'">
+        Ocultar Resultado
+    </button>
+</body>
+</html>
